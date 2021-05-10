@@ -13,7 +13,23 @@ sb.deleteCharAt(sb.length() - 1);
 ### Array
 ### String
 ### BFS
-### DFS
+### DFS / Backtracking
+```java 
+// Backtracking Sample
+
+void dfs(List<List<Integer>> result, List<Integer> current, int startIdx, int[] nums) {
+    if (meet criteria) {
+        result.add(new ArrayList<>(current);
+        return;
+    }
+
+    for (int i = startIdx; i < nums.length; i++) {
+        current.add(nums[i]);
+        dfs(result, current, i+1, nums);
+        current.remove(current.size() - 1);
+    }
+}
+```
 ### DP
 ### Two Pointer
 ### Sliding Window
