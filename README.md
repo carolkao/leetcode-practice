@@ -8,6 +8,20 @@ StringBuilder sb = new StringBuilder();
 sb.append("123");
 sb.deleteCharAt(sb.length() - 1);
 ```
+### [List <-> Array]
+```java
+//List to Array
+String[] strarray = list.toArray(new String[list.size()]);
+
+// Array to List
+List<String> list = Arrays.asList(strarray);
+List<String> list = Arrays.asList(strarray[i], strarray[j], strarray[k]);
+```
+
+### [填滿Array]
+```java
+Arrays.fill(array, value)
+```
 
 ## TO Review List
 ### Array
