@@ -26,6 +26,27 @@ Arrays.fill(array, value)
 ## TO Review List
 ### Array
 ### String
+### Binary Search
+```java
+// input: int[] nums
+
+int left = 0, right = nums.length - 1, mid;
+
+while (left < right) {
+    // not use (left + right) / 2 to avoid overflow
+    mid = left + (right - left) / 2;
+
+    // some specific condition
+    // xxx
+
+    // choose left-half or right-half
+    if (meet right-half condition) {
+        left = mid + 1; //or left = mid  (by different situation)
+    } else {
+        right = mid - 1; //or right = mid (by different situation)
+    }
+}
+```
 ### BFS
 ### DFS / Backtracking
 ```java 
