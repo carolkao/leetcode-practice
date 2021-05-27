@@ -8,6 +8,13 @@ StringBuilder sb = new StringBuilder();
 sb.append("123");
 sb.deleteCharAt(sb.length() - 1);
 ```
+StringBuilder 長度相關
+```java
+StringBuilder sb = new StringBuilder();
+int len = sb.length();
+// 清空sb
+sb.setLength(0);
+```
 ### [List <-> Array]
 ```java
 //List to Array
@@ -69,6 +76,18 @@ void dfs(List<List<Integer>> result, List<Integer> current, int startIdx, int[] 
 ### Two Pointer
 ### Sliding Window
 ### Tree
+#### Trie : 字典樹
+```java
+TrieNode {
+    TrieNode[] childNode = new TrieNode[26]; // 26 lower letters
+    boolean isWord = false; // from root to current letter compose a word
+}
+
+TrieNode root = new TrieNode(); //empty root
+for (String dicWord : dictionary) {
+    // build TrieTree from root
+}
+```
 ### Stack
 ### Queue
 ### Heap
