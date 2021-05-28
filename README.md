@@ -75,6 +75,21 @@ void dfs(List<List<Integer>> result, List<Integer> current, int startIdx, int[] 
 ### DP
 ### Two Pointer
 ### Sliding Window
+```java
+int left=0, right=0;
+while (right < len) {
+    // do somthing
+
+    // if match criteria, start to move left to reduce the window size
+    while (match criteria && left <= right) {
+        // do somthing
+        left++;
+    }
+
+    // criteria not match, so keep moving right
+    right++;
+}
+```
 ### Tree
 #### Trie : 字典樹
 ```java
